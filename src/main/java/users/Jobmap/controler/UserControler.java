@@ -9,10 +9,11 @@ import users.Jobmap.model.User;
 import java.util.List;
 
 @RestController
-@RequestMapping(path = "userrr")
+@RequestMapping(path = "user")
 public class UserControler {
     @GetMapping(path = "list")
     public List<User> list(){
         return List.of(new User("dudu","malah","Bahia","jequie","sad"));
     }
+
 }

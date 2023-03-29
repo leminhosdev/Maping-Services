@@ -1,0 +1,14 @@
+version: '3.1'
+services:
+  db:
+    image: mysql
+    container_name: jobDB
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3520:3306"
+    volumes:
+      - Jobmap_data:/var/lib/mysql
+
+volumes:
+  Jobmap_data:

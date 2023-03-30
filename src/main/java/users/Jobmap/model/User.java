@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
 @SuperBuilder
 @ToString
 @AllArgsConstructor
+@Table(name = "user_table")
 
 public class User {
     @Id
